@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package pb;
+
+service SaleService{
+    //新增用户购买信息
+    rpc AddBuyitem(AddSaleitemReq) returns(AddSaleitemRsp){}
+    //通过email查询某用户购买信息
+    rpc GetBuyitemsByEmail(GetBuyitemsByEmailReq) returns(GetBuyitemsByEmailRsp){}
+    //获取所有购买信息
+    rpc GetAllBuyitems(GetAllBuyitemsReq) returns(GetAllBuyitemsRsp){}
+}
+
+message AddSaleitemReq{
+    string email = 1;
+    string itemname = 2;
+    float price = 3;
+}
+
+message AddSaleitemRsp{
+}
+
+message GetBuyitemsByEmailReq{
+    string email = 1;
+}
+
+message Item{
+    string itemname = 1;
+    float price = 2;
+    string crtime = 3;
+}
+
+message GetBuyitemsByEmailRsp{
+    string uname = 1;
+    repeated Item items = 2;
+}
+
+message GetAllBuyitemsReq{
+
+}
+
+message BuyItem{
+    string uname = 1;
+    string itemname = 2;
+    float price = 3;
+    string crtime = 4;
+}
+
+message GetAllBuyitemsRsp{
+    repeated BuyItem buyitems = 1;
+}
+
+//message可以单独作为结构体传入
+message Itemdemo{
+    Item itemdemo = 1;
+}

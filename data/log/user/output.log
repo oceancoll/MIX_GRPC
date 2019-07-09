@@ -1,0 +1,85 @@
+2019-07-06 19:47:05.428	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-06 19:47:05.431	info	log/log.go:14	Transport [http] Listening on [::]:63557
+2019-07-06 19:47:05.431	info	log/log.go:14	Broker [http] Connected to [::]:63558
+2019-07-06 19:47:05.431	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-6aa1889f-dc4a-4ed2-bf3c-471eea3936f9
+2019-07-06 19:47:35.431	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-06 19:54:51.502	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-06 19:54:51.505	info	log/log.go:14	Transport [http] Listening on [::]:63729
+2019-07-06 19:54:51.505	info	log/log.go:14	Broker [http] Connected to [::]:63730
+2019-07-06 19:54:51.505	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-3f1cec03-6228-46bf-8227-cb9f776c3446
+2019-07-06 19:55:21.506	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-06 19:56:46.839	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-06 19:56:46.842	info	log/log.go:14	Transport [http] Listening on [::]:63756
+2019-07-06 19:56:46.842	info	log/log.go:14	Broker [http] Connected to [::]:63757
+2019-07-06 19:56:46.843	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-b00a13ff-6d5c-478d-851a-81c269ab9969
+2019-07-06 19:57:16.841	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-06 19:58:58.786	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-06 19:58:58.789	info	log/log.go:14	Transport [http] Listening on [::]:63807
+2019-07-06 19:58:58.789	info	log/log.go:14	Broker [http] Connected to [::]:63808
+2019-07-06 19:58:58.789	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-c9b522cc-0beb-4af7-afeb-9156c7efb50b
+2019-07-06 19:59:28.789	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-06 20:01:40.130	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-06 20:01:40.133	info	log/log.go:14	Transport [http] Listening on [::]:63838
+2019-07-06 20:01:40.133	info	log/log.go:14	Broker [http] Connected to [::]:63839
+2019-07-06 20:01:40.133	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-2ecc12cd-bcaf-4971-9e00-927e29672f33
+2019-07-06 20:02:10.133	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-06 20:05:38.236	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-06 20:05:38.239	info	log/log.go:14	Transport [http] Listening on [::]:63897
+2019-07-06 20:05:38.239	info	log/log.go:14	Broker [http] Connected to [::]:63898
+2019-07-06 20:05:38.239	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-082052fe-d4ba-49a6-9e2f-bd39bfb9d4ee
+2019-07-06 20:06:08.236	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 16:45:53.571	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-08 16:45:53.574	info	log/log.go:14	Transport [http] Listening on [::]:57680
+2019-07-08 16:45:53.575	info	log/log.go:14	Broker [http] Connected to [::]:57681
+2019-07-08 16:45:53.575	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-e1cdd61f-49c0-4c2a-a611-fa5249f39655
+2019-07-08 16:46:23.575	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 00:24:13.232	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 00:24:13.236	info	log/log.go:14	Transport [http] Listening on [::]:64739
+2019-07-09 00:24:13.236	info	log/log.go:14	Broker [http] Connected to [::]:64740
+2019-07-09 00:24:13.236	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-a0c8481e-6dd4-4d03-b564-5215dad5403f
+2019-07-09 00:25:01.245	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 00:25:01.248	info	log/log.go:14	Transport [http] Listening on [::]:64808
+2019-07-09 00:25:01.248	info	log/log.go:14	Broker [http] Connected to [::]:64809
+2019-07-09 00:25:01.248	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-33516aa4-1a76-4483-aed9-065bcdf7fc3e
+2019-07-09 00:25:31.250	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 00:31:05.632	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 00:32:13.786	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 00:32:13.792	info	log/log.go:14	Transport [http] Listening on [::]:65057
+2019-07-09 00:32:13.792	info	log/log.go:14	Broker [http] Connected to [::]:65058
+2019-07-09 00:32:13.792	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-dc9e5080-45e1-43de-8e86-168635b14201
+2019-07-09 00:32:43.787	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 00:48:40.963	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 00:48:40.966	info	log/log.go:14	Transport [http] Listening on [::]:65353
+2019-07-09 00:48:40.966	info	log/log.go:14	Broker [http] Connected to [::]:65354
+2019-07-09 00:48:40.966	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-587b6f51-79ac-41a9-aece-19260f58489d
+2019-07-09 00:49:10.964	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 10:39:28.501	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 10:39:28.543	info	log/log.go:14	Transport [http] Listening on [::]:49594
+2019-07-09 10:39:28.543	info	log/log.go:14	Broker [http] Connected to [::]:49595
+2019-07-09 10:39:28.544	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-d03175ee-fa05-424f-a71e-95a34e60b452
+2019-07-09 10:39:58.502	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 14:16:00.931	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 14:16:00.936	info	log/log.go:14	Transport [http] Listening on [::]:50399
+2019-07-09 14:16:00.936	info	log/log.go:14	Broker [http] Connected to [::]:50400
+2019-07-09 14:16:00.937	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-3c6eeea1-7d99-4206-a174-2df0b1cba8d6
+2019-07-09 14:16:30.936	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 14:59:59.522	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 14:59:59.526	info	log/log.go:14	Transport [http] Listening on [::]:51361
+2019-07-09 14:59:59.526	info	log/log.go:14	Broker [http] Connected to [::]:51362
+2019-07-09 14:59:59.526	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-7971d7ac-8739-4e42-a9d2-20cfed6f4a16
+2019-07-09 15:00:29.527	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 15:11:46.200	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 15:11:46.206	info	log/log.go:14	Transport [http] Listening on [::]:51518
+2019-07-09 15:11:46.206	info	log/log.go:14	Broker [http] Connected to [::]:51519
+2019-07-09 15:11:46.206	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-b6d80dfc-f974-4e9d-8548-c787bb91187a
+2019-07-09 15:12:16.205	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 18:40:35.127	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 18:40:35.130	info	log/log.go:14	Transport [http] Listening on [::]:57193
+2019-07-09 18:40:35.130	info	log/log.go:14	Broker [http] Connected to [::]:57194
+2019-07-09 18:40:35.130	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-a10cd931-4dee-4e82-9b0b-87cd1bf9e8e9
+2019-07-09 18:41:05.129	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 18:45:52.941	info	user-srv/main.go:23	Info	{"user-srv": "user-srv is start ..."}
+2019-07-09 18:45:52.944	info	log/log.go:14	Transport [http] Listening on [::]:57305
+2019-07-09 18:45:52.944	info	log/log.go:14	Broker [http] Connected to [::]:57306
+2019-07-09 18:45:52.945	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.user-468b138b-f09d-4a57-a56c-09865770c894
+2019-07-09 18:46:22.943	info	log/log.go:77	修改日志等级:  info => debug

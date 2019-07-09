@@ -1,0 +1,239 @@
+2019-07-08 16:22:02.093	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:22:02.098	info	log/log.go:14	Transport [http] Listening on [::]:57441
+2019-07-08 16:22:02.098	info	log/log.go:14	Broker [http] Connected to [::]:57442
+2019-07-08 16:22:02.098	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-8ad2d9b4-bb4a-4aba-994c-2c921fcb8cc7
+2019-07-08 16:22:32.098	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 16:22:52.965	info	log/log.go:10	panic recovered: runtime error: invalid memory address or nil pointer dereference
+2019-07-08 16:22:52.965	info	log/log.go:10	goroutine 52 [running]:
+runtime/debug.Stack(0xc0001967c0, 0x2, 0x2)
+	/usr/local/go/src/runtime/debug/stack.go:24 +0xa7
+github.com/micro/go-micro/server.(*rpcServer).ServeConn.func1(0x1a50f60, 0xc00018e240)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:67 +0xdc
+panic(0x1855b20, 0x205bf80)
+	/usr/local/go/src/runtime/panic.go:513 +0x1b9
+MIX_GRPC/src/sale-srv/handler.(*SaleServiceHandler).AddBuyitem(0xc0000b1960, 0x1a4fe20, 0xc00018e2a0, 0xc0003763c0, 0xc000196740, 0x222a6c0, 0x0)
+	/Users/liujiacheng/go/src/MIX_GRPC/src/sale-srv/handler/sale.go:36 +0xa7
+MIX_GRPC/src/share/pb.(*SaleService).AddBuyitem(0xc000169340, 0x1a4fe20, 0xc00018e2a0, 0xc0003763c0, 0xc000196740, 0x0, 0x0)
+	/Users/liujiacheng/go/src/MIX_GRPC/src/share/pb/sale.pb.go:553 +0x5b
+reflect.Value.call(0xc000160300, 0xc0000be7f0, 0x13, 0x19632b0, 0x4, 0xc0000fb6b0, 0x4, 0x4, 0x1, 0x19009e0, ...)
+	/usr/local/go/src/reflect/value.go:447 +0x449
+reflect.Value.Call(0xc000160300, 0xc0000be7f0, 0x13, 0xc0000fb6b0, 0x4, 0x4, 0x100d54f, 0xc000376640, 0x50)
+	/usr/local/go/src/reflect/value.go:308 +0xa4
+github.com/micro/go-micro/server.(*service).call.func1(0x1a4fe20, 0xc00018e2a0, 0x1a569a0, 0xc0003a8320, 0x18e6860, 0xc000196740, 0x5264158, 0x0)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:200 +0x292
+github.com/micro/go-micro/server.(*service).call(0xc000228500, 0x1a4fe20, 0xc00018e2a0, 0xc0000946c0, 0xc00038a280, 0xc00022c000, 0xc000192280, 0x19009e0, 0xc0003763c0, 0x16, ...)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:216 +0x683
+github.com/micro/go-micro/server.(*router).ServeRequest(0xc0000946c0, 0x1a4fe20, 0xc00018e2a0, 0x1a569a0, 0xc0003a8140, 0x1a4e6e0, 0xc000190810, 0xa, 0xc00038a276)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:450 +0x26b
+github.com/micro/go-micro/server.(*rpcServer).ServeConn(0xc00011c840, 0x1a50f60, 0xc00018e240)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:176 +0x708
+github.com/micro/go-micro/server.(*rpcServer).ServeConn-fm(0x1a50f60, 0xc00018e240)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:520 +0x3e
+github.com/micro/go-micro/transport.(*httpTransportListener).Accept.func1(0x1a4f120, 0xc0003ba000, 0xc0003ae000)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/transport/http_transport.go:391 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc000196020, 0x1a4f120, 0xc0003ba000, 0xc0003ae000)
+	/usr/local/go/src/net/http/server.go:1964 +0x44
+net/http.(*ServeMux).ServeHTTP(0xc0001900f0, 0x1a4f120, 0xc0003ba000, 0xc0003ae000)
+	/usr/local/go/src/net/http/server.go:2361 +0x127
+golang.org/x/net/http2/h2c.h2cHandler.ServeHTTP(0x1a46c00, 0xc0001900f0, 0xc00019a0c0, 0x1a4f120, 0xc0003ba000, 0xc0003ae000)
+	/Users/liujiacheng/go/src/golang.org/x/net/http2/h2c/h2c.go:98 +0x3d6
+net/http.serverHandler.ServeHTTP(0xc000374000, 0x1a4f120, 0xc0003ba000, 0xc0003ae000)
+	/usr/local/go/src/net/http/server.go:2741 +0xab
+net/http.(*conn).serve(0xc0003a80a0, 0x1a4fda0, 0xc00019ab40)
+	/usr/local/go/src/net/http/server.go:1847 +0x646
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x2f5
+2019-07-08 16:22:52.978	info	log/log.go:10	panic recovered: runtime error: invalid memory address or nil pointer dereference
+2019-07-08 16:22:52.978	info	log/log.go:10	goroutine 54 [running]:
+runtime/debug.Stack(0xc00000d620, 0x2, 0x2)
+	/usr/local/go/src/runtime/debug/stack.go:24 +0xa7
+github.com/micro/go-micro/server.(*rpcServer).ServeConn.func1(0x1a50f60, 0xc000094c00)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:67 +0xdc
+panic(0x1855b20, 0x205bf80)
+	/usr/local/go/src/runtime/panic.go:513 +0x1b9
+MIX_GRPC/src/sale-srv/handler.(*SaleServiceHandler).AddBuyitem(0xc0000b1960, 0x1a4fe20, 0xc000094c60, 0xc0001c2870, 0xc00000d5e0, 0x222a000, 0x0)
+	/Users/liujiacheng/go/src/MIX_GRPC/src/sale-srv/handler/sale.go:36 +0xa7
+MIX_GRPC/src/share/pb.(*SaleService).AddBuyitem(0xc000169340, 0x1a4fe20, 0xc000094c60, 0xc0001c2870, 0xc00000d5e0, 0x0, 0x0)
+	/Users/liujiacheng/go/src/MIX_GRPC/src/share/pb/sale.pb.go:553 +0x5b
+reflect.Value.call(0xc000160300, 0xc0000be7f0, 0x13, 0x19632b0, 0x4, 0xc0004036b0, 0x4, 0x4, 0x18b0801, 0x19009e0, ...)
+	/usr/local/go/src/reflect/value.go:447 +0x449
+reflect.Value.Call(0xc000160300, 0xc0000be7f0, 0x13, 0xc0004036b0, 0x4, 0x4, 0x100d54f, 0xc0001c28c0, 0x50)
+	/usr/local/go/src/reflect/value.go:308 +0xa4
+github.com/micro/go-micro/server.(*service).call.func1(0x1a4fe20, 0xc000094c60, 0x1a569a0, 0xc0001c8820, 0x18e6860, 0xc00000d5e0, 0x0, 0x0)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:200 +0x292
+github.com/micro/go-micro/server.(*service).call(0xc000228500, 0x1a4fe20, 0xc000094c60, 0xc0000946c0, 0xc000036790, 0xc00022c000, 0xc000192280, 0x19009e0, 0xc0001c2870, 0x16, ...)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:216 +0x683
+github.com/micro/go-micro/server.(*router).ServeRequest(0xc0000946c0, 0x1a4fe20, 0xc000094c60, 0x1a569a0, 0xc0001c8780, 0x1a4e6e0, 0xc00018d320, 0xa, 0xc000036786)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:450 +0x26b
+github.com/micro/go-micro/server.(*rpcServer).ServeConn(0xc00011c840, 0x1a50f60, 0xc000094c00)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:176 +0x708
+github.com/micro/go-micro/server.(*rpcServer).ServeConn-fm(0x1a50f60, 0xc000094c00)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:520 +0x3e
+github.com/micro/go-micro/transport.(*httpTransportListener).Accept.func1(0x1a4f120, 0xc00021a0e0, 0xc0003ae100)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/transport/http_transport.go:391 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc000196020, 0x1a4f120, 0xc00021a0e0, 0xc0003ae100)
+	/usr/local/go/src/net/http/server.go:1964 +0x44
+net/http.(*ServeMux).ServeHTTP(0xc0001900f0, 0x1a4f120, 0xc00021a0e0, 0xc0003ae100)
+	/usr/local/go/src/net/http/server.go:2361 +0x127
+golang.org/x/net/http2/h2c.h2cHandler.ServeHTTP(0x1a46c00, 0xc0001900f0, 0xc00019a0c0, 0x1a4f120, 0xc00021a0e0, 0xc0003ae100)
+	/Users/liujiacheng/go/src/golang.org/x/net/http2/h2c/h2c.go:98 +0x3d6
+net/http.serverHandler.ServeHTTP(0xc000374000, 0x1a4f120, 0xc00021a0e0, 0xc0003ae100)
+	/usr/local/go/src/net/http/server.go:2741 +0xab
+net/http.(*conn).serve(0xc0003a83c0, 0x1a4fda0, 0xc00019ae40)
+	/usr/local/go/src/net/http/server.go:1847 +0x646
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x2f5
+2019-07-08 16:46:33.926	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:46:33.930	info	log/log.go:14	Transport [http] Listening on [::]:57692
+2019-07-08 16:46:33.930	info	log/log.go:14	Broker [http] Connected to [::]:57693
+2019-07-08 16:46:33.930	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-ff9f00e1-76c8-4c1c-8912-71d995cfa00b
+2019-07-08 16:47:03.927	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 16:47:18.806	info	log/log.go:10	panic recovered: runtime error: invalid memory address or nil pointer dereference
+2019-07-08 16:47:18.806	info	log/log.go:10	goroutine 35 [running]:
+runtime/debug.Stack(0xc0001a4620, 0x2, 0x2)
+	/usr/local/go/src/runtime/debug/stack.go:24 +0xa7
+github.com/micro/go-micro/server.(*rpcServer).ServeConn.func1(0x1a50f60, 0xc00018c3c0)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:67 +0xdc
+panic(0x1855b20, 0x205bf80)
+	/usr/local/go/src/runtime/panic.go:513 +0x1b9
+MIX_GRPC/src/sale-srv/handler.(*SaleServiceHandler).AddBuyitem(0xc0001fc340, 0x1a4fe20, 0xc00018c420, 0xc0001e2320, 0xc0001a45a0, 0x222a6c0, 0x0)
+	/Users/liujiacheng/go/src/MIX_GRPC/src/sale-srv/handler/sale.go:36 +0xa7
+MIX_GRPC/src/share/pb.(*SaleService).AddBuyitem(0xc000169dd0, 0x1a4fe20, 0xc00018c420, 0xc0001e2320, 0xc0001a45a0, 0x0, 0x0)
+	/Users/liujiacheng/go/src/MIX_GRPC/src/share/pb/sale.pb.go:553 +0x5b
+reflect.Value.call(0xc00015e500, 0xc0000be880, 0x13, 0x19632b0, 0x4, 0xc0000fb6b0, 0x4, 0x4, 0x1, 0x19009e0, ...)
+	/usr/local/go/src/reflect/value.go:447 +0x449
+reflect.Value.Call(0xc00015e500, 0xc0000be880, 0x13, 0xc0000fb6b0, 0x4, 0x4, 0x100d54f, 0xc0001e25a0, 0x50)
+	/usr/local/go/src/reflect/value.go:308 +0xa4
+github.com/micro/go-micro/server.(*service).call.func1(0x1a4fe20, 0xc00018c420, 0x1a569a0, 0xc000392280, 0x18e6860, 0xc0001a45a0, 0x2784158, 0x0)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:200 +0x292
+github.com/micro/go-micro/server.(*service).call(0xc0001af140, 0x1a4fe20, 0xc00018c420, 0xc0000c1080, 0xc0001a2210, 0xc000204000, 0xc000192250, 0x19009e0, 0xc0001e2320, 0x16, ...)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:216 +0x683
+github.com/micro/go-micro/server.(*router).ServeRequest(0xc0000c1080, 0x1a4fe20, 0xc00018c420, 0x1a569a0, 0xc0003920a0, 0x1a4e6e0, 0xc00018e8a0, 0xa, 0xc0001a2200)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:450 +0x26b
+github.com/micro/go-micro/server.(*rpcServer).ServeConn(0xc00011d080, 0x1a50f60, 0xc00018c3c0)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:176 +0x708
+github.com/micro/go-micro/server.(*rpcServer).ServeConn-fm(0x1a50f60, 0xc00018c3c0)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:520 +0x3e
+github.com/micro/go-micro/transport.(*httpTransportListener).Accept.func1(0x1a4f120, 0xc0003a2000, 0xc0001aa100)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/transport/http_transport.go:391 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc0001a4080, 0x1a4f120, 0xc0003a2000, 0xc0001aa100)
+	/usr/local/go/src/net/http/server.go:1964 +0x44
+net/http.(*ServeMux).ServeHTTP(0xc00018e1e0, 0x1a4f120, 0xc0003a2000, 0xc0001aa100)
+	/usr/local/go/src/net/http/server.go:2361 +0x127
+golang.org/x/net/http2/h2c.h2cHandler.ServeHTTP(0x1a46c00, 0xc00018e1e0, 0xc000198180, 0x1a4f120, 0xc0003a2000, 0xc0001aa100)
+	/Users/liujiacheng/go/src/golang.org/x/net/http2/h2c/h2c.go:98 +0x3d6
+net/http.serverHandler.ServeHTTP(0xc000362000, 0x1a4f120, 0xc0003a2000, 0xc0001aa100)
+	/usr/local/go/src/net/http/server.go:2741 +0xab
+net/http.(*conn).serve(0xc000392000, 0x1a4fda0, 0xc000198640)
+	/usr/local/go/src/net/http/server.go:1847 +0x646
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x2f5
+2019-07-08 16:47:18.818	info	log/log.go:10	panic recovered: runtime error: invalid memory address or nil pointer dereference
+2019-07-08 16:47:18.818	info	log/log.go:10	goroutine 6 [running]:
+runtime/debug.Stack(0xc00000caa0, 0x2, 0x2)
+	/usr/local/go/src/runtime/debug/stack.go:24 +0xa7
+github.com/micro/go-micro/server.(*rpcServer).ServeConn.func1(0x1a50f60, 0xc000094600)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:67 +0xdc
+panic(0x1855b20, 0x205bf80)
+	/usr/local/go/src/runtime/panic.go:513 +0x1b9
+MIX_GRPC/src/sale-srv/handler.(*SaleServiceHandler).AddBuyitem(0xc0001fc340, 0x1a4fe20, 0xc000094660, 0xc0001e03c0, 0xc00000ca60, 0x222a000, 0x0)
+	/Users/liujiacheng/go/src/MIX_GRPC/src/sale-srv/handler/sale.go:36 +0xa7
+MIX_GRPC/src/share/pb.(*SaleService).AddBuyitem(0xc000169dd0, 0x1a4fe20, 0xc000094660, 0xc0001e03c0, 0xc00000ca60, 0x0, 0x0)
+	/Users/liujiacheng/go/src/MIX_GRPC/src/share/pb/sale.pb.go:553 +0x5b
+reflect.Value.call(0xc00015e500, 0xc0000be880, 0x13, 0x19632b0, 0x4, 0xc0000ff6b0, 0x4, 0x4, 0x18b0801, 0x19009e0, ...)
+	/usr/local/go/src/reflect/value.go:447 +0x449
+reflect.Value.Call(0xc00015e500, 0xc0000be880, 0x13, 0xc0000ff6b0, 0x4, 0x4, 0x100d54f, 0xc0001e0410, 0x50)
+	/usr/local/go/src/reflect/value.go:308 +0xa4
+github.com/micro/go-micro/server.(*service).call.func1(0x1a4fe20, 0xc000094660, 0x1a569a0, 0xc0003cc140, 0x18e6860, 0xc00000ca60, 0x0, 0x0)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:200 +0x292
+github.com/micro/go-micro/server.(*service).call(0xc0001af140, 0x1a4fe20, 0xc000094660, 0xc0000c1080, 0xc000036310, 0xc000204000, 0xc000192250, 0x19009e0, 0xc0001e03c0, 0x16, ...)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:216 +0x683
+github.com/micro/go-micro/server.(*router).ServeRequest(0xc0000c1080, 0x1a4fe20, 0xc000094660, 0x1a569a0, 0xc0003cc0a0, 0x1a4e6e0, 0xc0001948d0, 0xa, 0xc000036300)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_router.go:450 +0x26b
+github.com/micro/go-micro/server.(*rpcServer).ServeConn(0xc00011d080, 0x1a50f60, 0xc000094600)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:176 +0x708
+github.com/micro/go-micro/server.(*rpcServer).ServeConn-fm(0x1a50f60, 0xc000094600)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/server/rpc_server.go:520 +0x3e
+github.com/micro/go-micro/transport.(*httpTransportListener).Accept.func1(0x1a4f120, 0xc0003da000, 0xc0003d0000)
+	/Users/liujiacheng/go/src/github.com/micro/go-micro/transport/http_transport.go:391 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc0001a4080, 0x1a4f120, 0xc0003da000, 0xc0003d0000)
+	/usr/local/go/src/net/http/server.go:1964 +0x44
+net/http.(*ServeMux).ServeHTTP(0xc00018e1e0, 0x1a4f120, 0xc0003da000, 0xc0003d0000)
+	/usr/local/go/src/net/http/server.go:2361 +0x127
+golang.org/x/net/http2/h2c.h2cHandler.ServeHTTP(0x1a46c00, 0xc00018e1e0, 0xc000198180, 0x1a4f120, 0xc0003da000, 0xc0003d0000)
+	/Users/liujiacheng/go/src/golang.org/x/net/http2/h2c/h2c.go:98 +0x3d6
+net/http.serverHandler.ServeHTTP(0xc000362000, 0x1a4f120, 0xc0003da000, 0xc0003d0000)
+	/usr/local/go/src/net/http/server.go:2741 +0xab
+net/http.(*conn).serve(0xc0003cc000, 0x1a4fda0, 0xc00007ac00)
+	/usr/local/go/src/net/http/server.go:1847 +0x646
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x2f5
+2019-07-08 16:49:21.034	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:49:21.039	info	log/log.go:14	Transport [http] Listening on [::]:57722
+2019-07-08 16:49:21.039	info	log/log.go:14	Broker [http] Connected to [::]:57723
+2019-07-08 16:49:21.039	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-40fa4bce-12c8-4088-a7ee-752ecaf436eb
+2019-07-08 16:49:51.038	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 16:50:10.583	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:51:12.682	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:51:12.685	info	log/log.go:14	Transport [http] Listening on [::]:57768
+2019-07-08 16:51:12.686	info	log/log.go:14	Broker [http] Connected to [::]:57769
+2019-07-08 16:51:12.686	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-fffb1dfa-b191-4976-839c-a545af2b83a7
+2019-07-08 16:51:42.683	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 16:51:47.555	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:54:04.358	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:55:36.514	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:55:36.517	info	log/log.go:14	Transport [http] Listening on [::]:57850
+2019-07-08 16:55:36.517	info	log/log.go:14	Broker [http] Connected to [::]:57851
+2019-07-08 16:55:36.517	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-a3ed97f6-87a8-4b1e-acba-91d56e8093d3
+2019-07-08 16:56:06.515	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 16:56:24.931	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:57:01.847	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:57:01.850	info	log/log.go:14	Transport [http] Listening on [::]:57871
+2019-07-08 16:57:01.850	info	log/log.go:14	Broker [http] Connected to [::]:57872
+2019-07-08 16:57:01.850	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-833cded7-36e0-4df4-a41d-d8b2d44d00e8
+2019-07-08 16:57:31.848	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 16:57:43.723	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:59:30.136	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 16:59:30.139	info	log/log.go:14	Transport [http] Listening on [::]:57919
+2019-07-08 16:59:30.139	info	log/log.go:14	Broker [http] Connected to [::]:57920
+2019-07-08 16:59:30.139	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-70553c60-646e-44c8-9730-8dd3cffb568a
+2019-07-08 17:00:00.137	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 17:00:04.909	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 17:01:07.267	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 17:02:36.983	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 17:02:36.987	info	log/log.go:14	Transport [http] Listening on [::]:57974
+2019-07-08 17:02:36.987	info	log/log.go:14	Broker [http] Connected to [::]:57975
+2019-07-08 17:02:36.987	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-da6265ce-acf0-428f-b8c3-01c9bf8c1f84
+2019-07-08 17:03:06.985	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 17:03:20.844	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 17:06:48.215	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-08 17:06:48.220	info	log/log.go:14	Transport [http] Listening on [::]:58062
+2019-07-08 17:06:48.220	info	log/log.go:14	Broker [http] Connected to [::]:58063
+2019-07-08 17:06:48.220	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-fc19f5da-6119-43db-b2f1-f9dd8ad50f7d
+2019-07-08 17:07:18.220	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-08 17:07:26.901	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-09 00:33:28.374	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-09 00:33:28.377	info	log/log.go:14	Transport [http] Listening on [::]:65066
+2019-07-09 00:33:28.377	info	log/log.go:14	Broker [http] Connected to [::]:65067
+2019-07-09 00:33:28.378	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-a451f7a4-c95e-4fc1-9212-7db6d0de216e
+2019-07-09 00:33:58.376	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 14:56:45.759	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-09 14:56:45.764	info	log/log.go:14	Transport [http] Listening on [::]:51319
+2019-07-09 14:56:45.764	info	log/log.go:14	Broker [http] Connected to [::]:51320
+2019-07-09 14:56:45.765	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-20f58c1a-ef7d-4044-b31c-83d5913dc174
+2019-07-09 14:57:15.762	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 15:00:39.327	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-09 15:00:39.330	info	log/log.go:14	Transport [http] Listening on [::]:51371
+2019-07-09 15:00:39.330	info	log/log.go:14	Broker [http] Connected to [::]:51372
+2019-07-09 15:00:39.330	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-9c0623a1-0843-492e-81ab-ba70d2162917
+2019-07-09 15:01:09.332	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 15:01:57.937	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-09 15:02:03.044	info	log/log.go:14	rpc: unable to write error response: write tcp 10.1.9.253:51371->10.1.9.253:51392: write: broken pipe
+2019-07-09 15:13:54.891	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-09 15:13:54.894	info	log/log.go:14	Transport [http] Listening on [::]:51538
+2019-07-09 15:13:54.895	info	log/log.go:14	Broker [http] Connected to [::]:51539
+2019-07-09 15:13:54.895	info	log/log.go:14	Registry [mdns] Registering node: com.mixgrpc.sale-c64b104f-c23d-4c51-ad61-395cb1fe4617
+2019-07-09 15:14:24.896	info	log/log.go:77	修改日志等级:  info => debug
+2019-07-09 15:14:44.403	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-09 15:17:10.832	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}
+2019-07-09 15:25:25.440	info	sale-srv/main.go:23	Info	{"sale-srv": "sale-srv is start ..."}

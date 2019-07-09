@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package pb;
+
+service UserService{
+    //注册用户
+    rpc RegistAccount(RegistAccountReq) returns(RegistAccountRsp){}
+    //通过email查询某用户信息
+    rpc GetUinfoByEmail(GetUinfoByEmailReq) returns(GetUinfoByEmailRsp){}
+    //获取所有用户
+    rpc GetAllUinfo(GetAllUinfoReq) returns(GetAllUinfoRsp){}
+}
+
+message RegistAccountReq{
+    string uname = 1;
+    string password = 2;
+    string email = 3;
+}
+
+message RegistAccountRsp{
+}
+
+message GetUinfoByEmailReq{
+    string email = 1;
+}
+
+message GetUinfoByEmailRsp{
+    int32 id = 1;
+    string uname = 2;
+    string email = 3;
+    string crtime = 4;
+}
+
+message GetAllUinfoReq{
+
+}
+
+message GetAllUinfoRsp{
+    repeated GetUinfoByEmailRsp alluinfo = 1;
+}
